@@ -531,8 +531,8 @@ class Game:
             text_rect = text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT  // 2))
             self.screen.blit(text, text_rect)
 
-        text = font.render(str(self.collected_coins), True, "red")
-        text_rect = text.get_rect(center=(SCREEN_WIDTH // 70, SCREEN_HEIGHT  // 17))
+        text = font.render("Монеты: "+str(self.collected_coins), True, "red")
+        text_rect = text.get_rect(topleft =(10, 40))
         self.screen.blit(text, text_rect)
 
 
